@@ -1,0 +1,397 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*	================================
+	========== PAGE LAYOUT =========
+	================================ */	
+
+#Container{
+	width: 100%;
+	height: auto;
+	min-width: 1000px;
+	min-height: 1000px;
+}
+
+#Nav{
+	width: 100%;
+	height: 80px;
+	background-color: #2a2727;
+	position: fixed;
+	box-shadow:  0 12px 10px -10px #000000;
+	top: 0;	
+
+}
+
+#Header{
+	width: 100%;
+	height: 300px;
+	background-color: gray;
+	position: static;
+	background-image: url(../IMG/Vocational-Education1.jpg) ;
+	
+
+}
+
+#Mainbody{
+	width: 100%;
+	height: auto;
+	border-top: 3px solid #fc0505;
+	background-color: #FFF;
+	box-shadow:  8px -5px 10px -10px #000000, -8px -5px 10px -10px #000000;
+}
+
+#FootCont{
+	background-color: #161616;
+	color: #fff;
+	margin-top: 100px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	height: auto;
+
+}
+
+#Footer {
+	background-color: #000000;
+	color: #fff;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 2rem;
+	height: 4em;
+}
+
+
+
+/*	================================
+	============  BODY =============
+	================================ */	
+
+body{
+	height: 100%;
+	background-color: #e8e6e9;
+	padding-top: 80px;
+}
+
+article {
+	font-family: "adobe song std";
+	line-height: 1.5em;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 230px;
+	padding-right: 230px;
+}	
+
+#Mainbody h1{ font-weight: normal; font-size: 4em; text-align: center; padding-top: 25px; }
+
+#Mainbody h1::first-letter {
+  font-weight: bold;
+  color: red;
+}
+
+p{ margin: 10px 10px 10px 10px; text-align: left;}
+
+
+hr.style13 {
+	height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}	
+
+.circular img {
+	opacity: 1;
+	filter: alpha(opacity=1);
+	width: 200px;
+	height: 200px;
+	border-radius: 150px;
+	margin: 30px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: no-repeat;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
+
+
+.section1{
+	border-right: 1px solid black;
+	width: 270px;
+	height: 400px;
+	text-align: center;
+	background: rgba(161,0,0,0.77);
+	margin:2px 0px 0px 0px;
+}
+
+.section2{
+	border-right: 1px solid black;
+	width: 270px;
+	height: 400px;
+	text-align: center;
+	background: rgba(161,0,0,0.77);
+	margin:2px 0px 0px 0px;
+}
+
+.section3{
+	border-right: 1px solid black;
+	width: 270px;
+	height: 400px;
+	text-align: center;
+	background: rgba(161,0,0,0.77);
+	margin:2px 0px 0px 0px;
+}
+
+.section4{
+	border-right: 1px solid black;
+	width: 270px;
+	height: 400px;
+	text-align: center;
+	background: rgba(161,0,0,0.77);
+	margin:2px 0px 0px 0px;
+}
+
+.content{
+	float: right;
+	width: 1174px;
+	height: 400px;
+	margin:-400px 0px 10px -275px;
+	background: rgba(161,0,0,0.77);
+	overflow-y: scroll;
+}
+
+u{
+	font-style: italic;
+}
+
+
+
+
+/*	================================
+	============  NAV ==============
+	================================ */	
+
+#Nav ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 230px;
+	text-align: left;
+	display: block;
+}
+
+#Nav li {
+	list-style-type: none;
+	display: inline-block;
+	width: 150px;
+	height: 80px;
+	text-align: center;
+	line-height: 80px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+}
+		
+
+#Nav li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+#Nav li:hover {
+	background-color: #000;
+	border-bottom: 4px solid #d41a1a;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: 0.7s;
+	-webkit-transition-timing-function: ease;
+
+}
+
+#Nav .current a {
+	background: none;
+	color: red;
+}
+
+/*Cataloque Links*/
+.subnav {
+	padding-left: 230px;
+	text-align:left;
+	padding-top: 10px;
+}
+
+.subnav a{
+	text-decoration: none;
+	color: black;	
+}
+
+.subnav a:hover{
+	color: rgba(210,203,203,0.9);
+
+}
+
+/*	================================
+	============  FORM =============
+	================================ */
+
+
+label{
+	display: block;
+	
+}
+
+input[type=text],input[type=email],textarea{
+	padding: 10px;
+	border: 1px solid #e5e5e5;
+	width: 500px;
+	margin-left: 150px;
+	}
+
+
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 4px 0px 4px 4px;
+ 
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+  box-shadow: 2px 0px 5px rgba(81, 203, 238, 1),-2px 0px 5px rgba(81, 203, 238, 1);
+  padding: 4px 0px 4px 4px;
+  border: 1px solid rgba(81, 203, 238, 1);
+  border-radius: 5px;
+}
+
+input[type=submit]{
+	margin-left: 95px;
+	width: 250px;
+	height: 50px;
+	background-color: #4eadff;
+	color: white;
+	margin-bottom: 10px;
+	border-style: none;
+	font-size: 18px;
+}
+
+input[type=reset]{
+	margin-left: 150px;
+	width: 200px;
+	height: 35px;
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	margin-bottom: 10px;
+	border-style: none;
+	font-size: 18px;
+}
+
+
+/*	================================
+	============  FOOTER============
+	================================ */
+	
+#Footer footer{
+	margin-left: 230px;
+	
+}
+
+#Footer footer li, a{
+	 display: inline-block;
+	 text-decoration: none;
+	 color: white;
+	 
+}
+
+#Footer a{
+	font-size: large;
+	line-height: 45px;
+	margin-left: 35px;
+	
+}
+
+#Footer a:hover{
+	text-decoration: underline;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.7s;
+	-webkit-transition-timing-function: ease;
+	color: gray;
+}
+
+
+#FootCont .fc{
+	/*background-color: aqua;*/
+	margin: 0 auto;
+	height: 307px;
+	width: 834px;
+}
+
+#FootCont a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	margin-bottom: 5px;
+    line-height: 1.5;
+    color: #777;
+    height: 31px;
+    width: 300px;
+    
+}
+
+#FootCont a:hover{
+	text-decoration: underline;
+	color: white;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.7s;
+	-webkit-transition-timing-function: ease;
+	
+}
+
+#FootCont .f1{
+	float: left;
+	width: 217px;
+	/*background-color: blue;*/
+	
+}
+
+#FootCont .f2{
+	margin-left: 50px;
+	width: 217px;
+	/*background-color: green;*/
+	float: left;
+	
+}
+
+#FootCont .f3{
+		margin-left: 50px;
+		width: 300px;
+		float: left;
+		/*background-color: red;*/	
+}
+
+
+#FootCont .f1 h3, .f1 a{
+	padding-left: 54px;
+	
+}
+
+#FootCont .f2 h3, .f2 a{
+	padding-left: 54px;	
+}
+
+#FootCont .f3 h3, .f3 a{
+		padding-left: 75px;
+			
+}
+
+
+
+
+
+	
+	
+
+	
