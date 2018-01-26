@@ -1,0 +1,329 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>TVEP/Feedback</title>
+
+	<link href="../CSS/style-sheet.css" rel="stylesheet" text="text/css" />
+	<link href="../CSS/web-adjust.css" rel="stylesheet" text="text/css" media="screen and (max-width: 1080px)" />
+
+	
+	<style type="text/css">
+
+	body{
+	background: #323B42;
+	background-size: cover;
+	font-family: 'Lucida Sans Unicode','Lucida Grande',sans-serif;
+	font-size: 14px;
+	background-position: 50% 50%;
+	margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	}
+	
+		
+	.form_table{
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 4px;
+	border: 0px solid #FFFFFF;
+	background: #455058;
+	background-size: cover;
+	color: #F1F9FF;
+	overflow: hidden;
+	box-shadow: none;
+	background-position: 50% 50%;
+}
+
+
+
+.segment_header{
+	width: auto;
+	margin-left: -30px;
+	color: #FFFFFF;
+	background: #283036;
+	background-size: cover;
+	background-repeat: repeat;
+	background-position: 50% 50%;
+	border-radius: 0;
+	
+	
+}
+
+.segment_header h1{
+	width: 650px;
+	border-radius: 0;
+	}
+
+.q{
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	float: left;
+	display: block;
+}
+
+.q .question{
+	font-weight: normal;
+}
+
+.q .left_question_first{
+	width: 15em;
+}
+
+
+
+.q .text_field{
+	background: #323B42;
+	border: 1px solid #323B42;
+	border-radius: 0;
+	border-width: 0 0 1px 0;
+	color: #F1F9FF;
+	font-family: 'Lucida Sans Unicode','Lucida Grande',sans-serif;
+	font-size: 14px;
+	margin: 1px 0;
+	padding: 10px;
+}
+
+
+.outside{
+	color: #576366;
+}
+
+.outside_container{
+	width: 650px;
+	padding: 1em 0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #576366;
+}
+
+.outside_container .submit_button{
+	color: #FFFFFF !important;
+	background: #7AB2B5;
+	background-size: auto;
+	border-style: none;
+	border-width: 0px;
+	border-color: #FFFFFF;
+	border-radius: 4px;
+	text-align: center;
+	font-family: 'Lucida Sans Unicode','Lucida Grande',sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	min-width: 30%;
+	text-transform: uppercase;
+	box-shadow: none;
+}
+
+.outside_container .submit_button:hover{
+	background: #8ECCCF;
+	border-color: #BBBBBB;
+	background-size: auto;
+}
+
+
+
+	</style>
+		
+	<script type="text/javascript" language="javascript">
+    <!--
+    	
+    	function emailValidator(){
+    		var mail = (document.getElementById("email").value);
+			var emailExp = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+		
+		if(document.Feedback.email.value.match(emailExp)){
+			
+			return true;
+		
+		}else{
+				alert("Invalid email!");
+				document.Feedback.email.focus();
+				return false;
+				
+			}
+       }
+       	   
+    	function validate()
+    	{
+	    	
+	  
+	    	
+	    	
+	    	if( document.Feedback.name.value == "" )
+	    	{
+		    	alert( "PLEASE PROVIDE YOUR USER NAME!" );
+		    	document.Feedback.name.focus();
+		    	return false;
+	    	}
+	    
+	    	
+	    	if( document.Feedback.email.value == "" )
+	    	{
+		    	alert( "PLEASE PROVIDE YOUR EMAIL!" );
+		    	document.Feedback.email.focus() ;
+		    	return false;
+	    	
+	    	}
+	    	
+			emailValidator();
+			
+	    	if( document.Feedback.subject.value == "" )
+	    	{
+		    	alert( "PLEASE PROVIDE A SUBJECT!" );
+		    	document.Feedback.subject.focus() ;
+		    	return false;
+	    	}
+	    	
+	    	if( document.Feedback.comment.value == "" )
+	    	{
+		    	alert( "PLEASE PROVIDE COMMENTS!" );
+		    	document.Feedback.comment.focus() ;
+		    	return false;
+	    	
+	    	}
+	    	
+	    		    	
+	    	
+			alert( "SUCCESSFUL...!" );
+	    	return(true);
+	    	
+	    	
+    	}
+
+	   
+	   			
+	//-->   
+
+	</script>
+	
+	
+</head>
+
+<body>
+	
+	<div id="Container">
+	<div id="Nav">
+		<ul>
+		<li><a href="../HTML/index.html">Home</a></li>
+		<li><a href="../HTML/Associates.html">Associates</a></li>
+		<li><a href="../HTML/Catalogue.html">Catalogue</a></li>
+		<li><a href="../HTML/About.html">About</a></li>
+		<li class="current" ><a href="../HTML/Feedback.html">Feed Back</a></li>
+		<li><a href="../HTML/ProFormaRequest.html">ProForma Request</a></li>
+		<li><a  href="../HTML/Sampletest.html">Sample Test</a></li>
+		</ul>
+
+		
+	</div>	<div class="header"></div>
+	<div class="mainbody">
+		
+		<form method="get" id="FSForm" name="Feedback" action="#">
+
+																		<!-- BEGIN_ITEMS -->
+		<div class="form_table">
+							
+				<div class="segment_header" style="background:#800000;width:auto;text-align:Center;">
+					
+					<h1 style="font-size:36px;font-family:'Century Gothic',CenturyGothic, AppleGothic, sans-serif;padding:20px 1em ;"> Send Feedback</h1>
+				
+				</div>
+
+			
+
+			<div  class="q">
+					
+				<label class="question top_question" for="name">Name:<b class="icon_required">*</b></label>
+				<input type="text" name="username" class="text_field" id="name" autofocus="" required="" placeholder="provide your name"  size="25" maxlength="255" value="" />
+			
+			</div>
+
+
+			<div class="q">
+					
+				<label class="question top_question" for="email">Email Address:<b class="icon_required">*</b></label>
+				<input type="email" name="mail" class="text_field" id="email" required=""  placeholder="someone@xample.com"  size="25" maxlength="255" value="" />
+		
+			</div>
+			
+
+			<div class="q">
+					
+				<label class="question top_question" for="subject">Subject:<b class="icon_required">*</b></label>
+				<input type="text" name="subject" class="text_field" id="subject" required="" placeholder="provide a subject"  size="25" maxlength="255" value="" />
+			
+			</div>
+		
+			
+			<div class="q">
+					
+				<label class="question top_question" for="comment">Comment:<b class="icon_required">*</b></label>
+				<textarea  name="comment" class="text_field" id="comment"  placeholder="Enter your comments here" required="" size="25" maxlength="255" value="" ></textarea>
+		
+			</div>		
+			
+			
+
+
+		</div>	
+																					<!-- END_ITEMS -->
+																						
+			
+			<div class="outside_container">	
+					<input type="reset" value="Reset" class="submit_button" />				
+					<input type="submit" value="Submit -->" class="submit_button" onclick="return validate();" />
+			</div>
+				
+	</form>
+		
+	
+	
+	</div>
+	<div id="FootCont">
+			<div class="fc">
+			<div class="f1">
+			<h3>About Us</h3>
+			<a href="../HTML/About.html">About Us</a>
+			</div>
+		
+			<div class="f2">
+			<h3>Support</h3>
+			<a href="../HTML/About.html">Contact Us</a>
+			<a href="../HTML/Feedback.html">Site feedback</a>
+			</div>
+		
+			<div class="f3">
+			<h3>Our Services</h3>
+			<a href="../HTML/Comsci.html">Computer Science</a>
+			<a href="../HTML/VGM.html">Video Games + Multimedia</a>
+			<a href="../HTML/HCI.html">Human Computer Interaction</a>
+			<a href="../HTML/WTCC.html">Web Technology and Cloud Computing</a>
+			<a href="../HTML/DSBD.html">Data Science and Big Data</a>
+			<a href="../HTML/IIS.html">Informatics and Information Science</a>
+			<a href="../HTML/ITS.html">IT Security</a>
+			<a href="../HTML/BIS.html">Business Information Systems</a>
+			</div>
+			</div>
+		
+	</div>
+	<div id="Footer">	
+		<footer>
+				<ul>
+				<li>&copy; Copyright TVEP</li>
+				<li><a href="../HTML/sitemap.html">Site Map</a></li>
+				</ul>
+				
+		</footer>	
+	</div>	
+
+	</div>
+	
+	
+	
+</body>
+
+</html>

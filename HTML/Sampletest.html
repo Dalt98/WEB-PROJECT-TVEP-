@@ -1,0 +1,215 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>TVEP/Sample-Test</title>
+
+	<link href="../CSS/style-sheet.css" rel="stylesheet" text="text/css" />
+	<link href="../CSS/web-adjust.css" rel="stylesheet" text="text/css" media="screen and (max-width: 1080px)" />
+
+	
+	<style type="text/css">
+
+	body {
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		
+	}
+	
+	.header{
+	  width: 100%;
+	  height: 356px;
+	  position: static;
+	  background-image: url(../IMG/test_banner.jpg) ;
+	  background-repeat: no-repeat;
+	  background-size: 100% 356px;
+	  background-color: black;
+	  
+	}
+	.Mainbody {
+    max-width: 1200px;
+    margin-left: 230px;
+    margin-right: 230px;
+    width: 100%;
+	height: auto;
+	border-top: 3px solid #fc0505;
+	background-color: #FFF;
+	box-shadow:  8px -5px 10px -10px #000000, -8px -5px 10px -10px #000000;
+	padding-left: 50px;
+	
+}
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+.parent {
+    width: 25%;
+    height: 200px;
+    border: 1px solid blue;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+/* Several different images */
+.bg-one {background-image: url(../IMG/cxc1.jpg);
+	background-size:100% 200px;
+}
+.bg-two {background-image: url(../IMG/logo.ashx.jpeg);
+	background-size:100% 200px;
+}
+
+.Mainbody a {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+   	
+}
+
+.Mainbody li{
+	width: 25%;
+	height: 200px;
+	text-decoration: none;
+}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.75);
+}
+
+
+	</style>
+	
+		<script src="../JS/jquery-3.1.1.js"></script>
+
+	
+</head>
+
+<body>
+	
+	<div id="Container">
+		<div id="Nav">
+			<ul>
+				<li><a href="../HTML/index.html">Home</a></li>
+				<li><a href="../HTML/Associates.html">Associates</a></li>
+				<li><a href="../HTML/Catalogue.html">Catalogue</a></li>
+				<li><a href="../HTML/About.html">About</a></li>
+				<li><a href="../HTML/Feedback.html">Feed Back</a></li>
+				<li><a href="../HTML/ProFormaRequest.html">ProForma Request</a></li>
+				<li class="current"><a href="../HTML/Sampletest.html">Sample Test</a></li>
+		   </ul>
+		
+	</div>
+	<div class="header"></div>
+		<div class="Mainbody">
+				<article>
+				<h1>Take a sample test</h1>
+			
+				<div class="parent" onclick="">
+					<div class="child bg-one">
+						<ul>
+						<li><a href="../HTML/CSEC.html">CSEC</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="parent right" onclick="">
+					<div class="child bg-two">
+						<ul>
+						<li><a href="../HTML/GSAT.html">GSAT</a></li>
+						</ul>
+					</div>
+    
+				</div>
+    
+				</article>
+		
+	</div>
+	<div id="FootCont">
+			<div class="fc">
+			<div class="f1">
+			<h3>About Us</h3>
+			<a href="../HTML/About.html">About Us</a>
+			</div>
+		
+			<div class="f2">
+			<h3>Support</h3>
+			<a href="../HTML/About.html">Contact Us</a>
+			<a href="../HTML/Feedback.html">Site feedback</a>
+			</div>
+		
+			<div class="f3">
+			<h3>Our Services</h3>
+			<a href="../HTML/Comsci.html">Computer Science</a>
+			<a href="../HTML/VGM.html">Video Games + Multimedia</a>
+			<a href="../HTML/HCI.html">Human Computer Interaction</a>
+			<a href="../HTML/WTCC.html">Web Technology and Cloud Computing</a>
+			<a href="../HTML/DSBD.html">Data Science and Big Data</a>
+			<a href="../HTML/IIS.html">Informatics and Information Science</a>
+			<a href="../HTML/ITS.html">IT Security</a>
+			<a href="../HTML/BIS.html">Business Information Systems</a>
+			</div>
+			</div>
+		
+	</div>
+	<div id="Footer">	
+		<footer>
+				<ul>
+				<li>&copy; Copyright TVEP</li>
+				<li><a href="../HTML/sitemap.html">Site Map</a></li>
+				</ul>
+				
+		</footer>	
+	</div>	
+	</div>
+	
+	
+</body>
+
+</html>

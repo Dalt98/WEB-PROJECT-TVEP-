@@ -1,0 +1,371 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>TVEP/Sample-Test/GSAT/math</title>
+
+	<link href="../CSS/style-sheet.css" rel="stylesheet" text="text/css" />
+	<link href="../CSS/web-adjust.css" rel="stylesheet" text="text/css" media="screen and (max-width: 1080px)" />
+
+	
+	<style type="text/css">
+
+	body {
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+		
+	}
+	
+.header{
+	  width: 100%;
+	  height: 46px;
+	  position: static;
+	  background-color: #5cb9ff;
+	  
+	}
+	
+	.answers li { 
+	  list-style: upper-alpha; 
+	} 
+
+	label { 
+	  margin-top: -25px;
+	  margin-left: 30px; 
+	  cursor: pointer; 
+	} 
+
+	#results { 
+	  background: #dddada; 
+	  color: 000000; 
+	  padding: 3px; 
+	  text-align: center; 
+	  width: 200px; 
+	  cursor: pointer; 
+	  border: 1px solid gray; 
+	  margin-left: 500px;
+	  
+	}
+	
+	#reset input{ 
+	  padding: 3px; 
+	  text-align: center; 
+	  width: 200px; 
+	  cursor: pointer; 
+	  border: 1px solid gray; 
+	  clear: both;
+	  margin-top: 20px;
+	  margin-left: 200px;
+	  margin-bottom: -40px;
+	  font-family: none;
+	  font-size: 23px;
+	  
+	}
+	
+	#reset input:hover{
+	  background: #3d91b8; 
+	  color: #ffffff; 
+	  padding: 3px; 
+	  text-align: center; 
+	  width: 200px; 
+	  cursor: pointer; 
+	  border: 1px solid gray; 
+	
+	}
+	
+	
+
+
+	#results:hover { 
+	  background: #3d91b8; 
+	  color: #ffffff; 
+	  padding: 3px; 
+	  text-align: center; 
+	  width: 200px; 
+	  cursor: pointer; 
+	  border: 1px solid gray; 
+	} 
+	
+
+	#categorylist { 
+	  margin-top: 6px; 
+	  display: none; 
+	} 
+
+	#category1, #category2, #category3, #category4, #category5, #category6, #category7, #category8, #category9, #category10, #category11 { 
+	  display: none; 
+	}
+
+	#closing {
+	  display: none;
+	  font-style: italic;
+	}
+	
+	.br{
+		margin-top: 30px;
+		margin-left: 60px;
+		background-color: rgba(176,92,92,0.53);
+		margin-right: 372px;
+	}
+
+
+
+	</style>
+	
+		<script  type="text/javascript" src="../JS/jquery-3.1.1.js"></script>
+		<script  type="text/javascript" src="../JS/jquery.js"></script>
+		<script type="text/javascript" src="../JS/test.js"></script>
+	
+</head>
+
+<body>
+	
+	<div id="Container">
+		<div id="Nav">
+			<ul>
+				<li><a href="../HTML/index.html">Home</a></li>
+				<li><a href="../HTML/Associates.html">Associates</a></li>
+				<li><a href="../HTML/Catalogue.html">Catalogue</a></li>
+				<li><a href="../HTML/About.html">About</a></li>
+				<li><a href="../HTML/Feedback.html">Feed Back</a></li>
+				<li><a href="../HTML/ProFormaRequest.html">ProForma Request</a></li>
+				<li class="current"><a href="../HTML/Sampletest.html">Sample Test</a></li>
+		   </ul>
+		
+	</div>
+	<div class="header"></div>
+		<div id="Mainbody">
+				
+			<div class="subnav">
+		
+			<a href="../HTML/Sampletest.html">Sample Test </a> / <a href="../HTML/GSAT.html">GSAT</a> / Mathematics
+		
+			</div>
+				
+				<hr>
+				
+				<article>
+				    <form>
+				    <div class="br">
+				    
+				   <p class="question">1. Which of .. is a subset of {b, c, d}?</p>        
+
+				   		<ol class="answers">            
+					   		<li><input type="radio" name="q1" value="a" id="q1a"><label for="q1a">{ }</label><br/> </li>         
+					   		<li><input type="radio" name="q1" value="b" id="q1b"><label for="q1b">{a}</label><br/></li>            
+					   		<li><input type="radio" name="q1" value="c" id="q1c"><label for="q1c">{1,2,3}</label><br/></li>            
+					   		<li><input type="radio" name="q1" value="d" id="q1d"><label for="q1d">{a, b, c}</label><br/> </li>      
+					   	</ol>         
+
+
+				   <p class="question">2. The value of 5 in the number 357.21 is</p>        
+
+				   		<ol class="answers">            
+					   		<li><input type="radio" name="q2" value="a" id="q2a"><label for="q2a">5 tenths</label><br/></li>           
+					   		<li><input type="radio" name="q2" value="b" id="q2b"><label for="q2b">5 ones</label><br/> </li>           
+					   		<li><input type="radio" name="q2" value="c" id="q2c"><label for="q2c">5 tens</label><br/></li>           
+					   		<li><input type="radio" name="q2" value="d" id="q2d"><label for="q2d">5 hundreds</label><br/> </li>      
+					   	</ol>        
+
+				   <p class="question">3. In geometry, the equation of the x-axis is</p>        
+
+				   		<ol class="answers">            
+					   		<li><input type="radio" name="q3" value="a" id="q3a"><label for="q3a">y = x</label><br/> </li>          
+					   		<li><input type="radio" name="q3" value="b" id="q3b"><label for="q3b">y = 0</label><br/></li>            
+					   		<li><input type="radio" name="q3" value="c" id="q3c"><label for="q3c">x = 0</label><br/> </li>          
+					   		<li><input type="radio" name="q3" value="d" id="q3d"><label for="q3d">y = 1</label><br/> </li>      
+					   	</ol>        
+					   
+				    
+					   	
+				   <p class="question">4. 3x 4(x+6)=</p>        
+
+				   		<ol class="answers">           
+					   		<li><input type="radio" name="q4" value="a" id="q4a"><label for="q4a">x + 6</label><br/> </li>           
+					   		<li><input type="radio" name="q4" value="b" id="q4b"><label for="q4b"> - x - 24</label><br/></li>            
+					   		<li><input type="radio" name="q4" value="c" id="q4c"><label for="q4c">7x + 6</label><br/> </li>           
+					   		<li><input type="radio" name="q4" value="d" id="q4d"><label for="q4d"> -7x - 24</label><br/> </li>       
+					   	</ol>        
+					   
+				      	
+					
+					  
+					
+				    <p class="question">5. Which of .. is the HCF of 18, 24 & 36?</p>        
+
+						<ol class="answers">            
+							<li><input type="radio" name="q5" value="a" id="q5a"><label for="q5a">6</label><br/> </li>           
+							<li><input type="radio" name="q5" value="b" id="q5b"><label for="q5b">18</label><br/> </li>           
+							<li><input type="radio" name="q5" value="c" id="q5c"><label for="q5c">36</label><br/> </li>          
+							<li><input type="radio" name="q5" value="d" id="q5d"><label for="q5d">72</label><br/> </li>       
+					   </ol>   
+				 
+				 
+
+				   <p class="question">6. How many subsets does the set {a, b, c, d, e} have?</p>        
+
+				   		<ol class="answers">            
+					   		<li><input type="radio" name="q6" value="a" id="q6a"><label for="q6a">2</label><br/></li>            
+					   		<li><input type="radio" name="q6" value="b" id="q6b"><label for="q6b">5</label><br/> </li>           
+					   		<li><input type="radio" name="q6" value="c" id="q6c"><label for="q6c">10</label><br/> </li>          
+					   		<li><input type="radio" name="q6" value="d" id="q6d"><label for="q6d">32</label><br/>  </li>      
+					   </ol>  
+					   
+				    
+
+				<p class="question">7. Which of ..is NOT a prime number?</p>        
+
+						<ol class="answers">            
+							<li><input type="radio" name="q7" value="a" id="q7a"><label for="q7a">11</label><br/> </li>           
+							<li><input type="radio" name="q7" value="b" id="q7b"><label for="q7b">21</label><br/></li>            
+							<li><input type="radio" name="q7" value="c" id="q7c"><label for="q7c">31</label><br/></li>            
+							<li><input type="radio" name="q7" value="d" id="q7d"><label for="q7d">41</label><br/></li>        
+							</ol>        
+
+				<p class="question">8. 2p<sup>2</sup>   15p + 25 =</p>        
+
+						<ol class="answers">            
+							<li><input type="radio" name="q8" value="a" id="q8a"><label for="q8a">(p - 5)(2p - 5)</label><br/> </li>           
+							<li><input type="radio" name="q8" value="b" id="q8b"><label for="q8b">(p - 5)(2p + 5)</label><br/></li>            
+							<li><input type="radio" name="q8" value="c" id="q8c"><label for="q8c">(p + 5)(2p - 5)</label><br/></li>            
+							<li><input type="radio" name="q8" value="d" id="q8d"><label for="q8d">(2p - 15)(p + 5)</label><br/></li>       
+						</ol> 
+				
+							
+			       
+
+				<p class="question">9. What is the value of u in the sequence 2 , 7 , 14 , 23 , 34 , u ?</p>        
+
+						<ol class="answers">            
+							<li><input type="radio" name="q9" value="a" id="q9a"><label for="q9a">45</label><br/> </li>           
+							<li><input type="radio" name="q9" value="b" id="q9b"><label for="q9b">46</label><br/> </li>           
+							<li><input type="radio" name="q9" value="c" id="q9c"><label for="q9c">47</label><br/> </li>           
+							<li><input type="radio" name="q9" value="d" id="q9d"><label for="q9d">53</label><br/>  </li>      
+						</ol> 
+				        
+	
+				<p class="question">10. The number 0.0417 in standard form is</p>        
+
+						<ol class="answers">           
+							<li><input type="radio" name="q10" value="a" id="q10a"><label for="q10a">4.17 x 10<sup>-4</sup></label><br/> </li>           
+							<li><input type="radio" name="q10" value="b" id="q10b"><label for="q10b">4.17 x 10<sup>-3</sup></label><br/> </li>           
+							<li><input type="radio" name="q10" value="c" id="q10c"><label for="q10c">4.17 x 10<sup>-2</sup></label><br/> </li>           
+							<li><input type="radio" name="q10" value="d" id="q10d"><label for="q10d">4.17 x 10<sup>-1</sup></label><br/> </li>       
+						</ol>        
+				   </div>
+				   
+						<br/>
+				<div id="reset">
+					
+				<input type="reset" value="reset">
+				
+			</div>	
+			
+			<div id="results">            
+				Show me the answers!       
+			</div> 
+			
+				    </form>           
+
+				<div id="category1">            
+					<p>              
+						<strong>Question 1:</strong> The correct answer is <strong>(A)</strong>.</p>        
+				</div>        
+
+				<div id="category2">            
+					<p>              
+						<strong>Question 2:</strong> The correct answer is <strong>(C)</strong>.</p>        
+				</div>        
+
+				<div id="category3">            
+					<p>                
+						<strong>Question 3:</strong> The correct answer is <strong>(B)</strong>.</p>        
+				</div>        
+
+				<div id="category4">            
+					<p>               
+						<strong>Question 4:</strong> The correct answer is <strong>(B)</strong>.</p>        
+				</div>        
+
+				<div id="category5">            
+					<p>                
+						<strong>Question 5:</strong> The correct answer is <strong>(A)</strong>.</p>        
+				</div>        
+
+				<div id="category6">            
+					<p>                
+						<strong>Question 6:</strong> The correct answer is <strong>(D)</strong>.</p>        
+				</div>        
+
+				<div id="category7">            
+					<p>                
+						<strong>Question 7:</strong> The correct answer is <strong>(B)</strong>.</p>        
+				</div>        
+
+				<div id="category8">            
+					<p>               
+						<strong>Question 8:</strong> The correct answer is <strong>(A)</strong>.</p>        
+				</div>        
+
+				<div id="category9">           
+					<p>               
+						<strong>Question 9:</strong> The correct answer is <strong>(C)</strong>.</p>        
+				</div>        
+
+				<div id="category10">            
+					<p>                
+						<strong>Question 10:</strong> The correct answer is <strong>(C)</strong>.</p>        
+				</div>        
+
+				<div id="category11">            
+					<p>                
+						You answered them all right!</p>        
+				</div>									
+				</article>
+		
+	</div>
+	<div id="FootCont">
+			<div class="fc">
+			<div class="f1">
+			<h3>About Us</h3>
+			<a href="../HTML/About.html">About Us</a>
+			</div>
+		
+			<div class="f2">
+			<h3>Support</h3>
+			<a href="../HTML/About.html">Contact Us</a>
+			<a href="../HTML/Feedback.html">Site feedback</a>
+			</div>
+		
+			<div class="f3">
+			<h3>Our Services</h3>
+			<a href="../HTML/Comsci.html">Computer Science</a>
+			<a href="../HTML/VGM.html">Video Games + Multimedia</a>
+			<a href="../HTML/HCI.html">Human Computer Interaction</a>
+			<a href="../HTML/WTCC.html">Web Technology and Cloud Computing</a>
+			<a href="../HTML/DSBD.html">Data Science and Big Data</a>
+			<a href="../HTML/IIS.html">Informatics and Information Science</a>
+			<a href="../HTML/ITS.html">IT Security</a>
+			<a href="../HTML/BIS.html">Business Information Systems</a>
+			</div>
+			</div>
+		
+	</div>
+	<div id="Footer">	
+		<footer>
+				<ul>
+				<li>&copy; Copyright TVEP</li>
+				<li><a href="../HTML/sitemap.html">Site Map</a></li>
+				</ul>
+				
+		</footer>	
+	</div>	
+
+	</div>
+	
+	
+</body>
+
+</html>
